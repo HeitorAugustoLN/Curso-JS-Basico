@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: whitesmoke;
+            font: normal 16pt Quicksand;
+        }
+        input {
+            background-color: rgb(30, 30, 30);
+            border: none;
+            color: whitesmoke;
+            width: 150pt;
+            font: 16pt Quicksand;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro: <input type="number" name="velocidade" id="velocidade"> km/h <br>
+    <input type="button" value="Verificar" id="verificarbutton" onclick="limiteVelocidade()"> <br>
+    <div id="divfoda">Resultado: </div>
+
+    <script>
+        function limiteVelocidade() {
+            var verificartxt = document.getElementById('velocidade') // Irá buscator o elemento com id "velocidade"
+            var resultadotxt = document.getElementById('verificarbutton') // Irá buscator o elemento com id "verificarbutton"
+            var resultadodiv = document.getElementById('divfoda') // Irá buscator o elemento com id "divfoda"
+            var _verificar = Number(verificartxt.value) // Irá transformar a var "verificartxt" em number para podermos verificar
+            if (_verificar >= 70) { // Se a velocidade for maior ou igual a 70 km/h
+                resultadodiv.innerHTML = `Resultado: Você estava à ${_verificar}km/h e foi multado por ultrapassar 70km/h` // Você será multado
+                _verificar
+            } else { // Caso contrário
+                resultadodiv.innerHTML = `Resultado: Você estava à ${_verificar}km/h e não foi multado` // Você não será multado
+                _verificar
+            }
+        }
+    </script>
+</body>
+</html>
