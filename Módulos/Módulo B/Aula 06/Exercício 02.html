@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manipulação de Dados</title>
+    <style>
+      body {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        font: bold 16pt Quicksand;
+      }
+      button {
+          background-color: rgb(30, 30, 30);
+          border: none;
+          color:white;
+          font:normal 12pt Quicksand;
+          size: 12pt;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá Mundo! Esse é meu primeiro script.</h1>
+    <p>Estou me livrando da maldição!</p>
+    <a href="#" onclick="abreLink()"><button>Clique em mim para aprender JavaScript</button></a>
+    </a>
+
+    <script>
+      alert("Abra o inspecionar e vai no console") // Enviará um alert
+      var nome = prompt("Qual é seu nome?") // Enviará uma pergunta e seu valor será guardado em "nome"
+      alert(nome + ", Gostei desse nome!") // Enviará um alert sobre seu nome
+      // Enviará 4 logs de console para o console
+      console.log("Obrigado por ver esse html!") 
+      console.log("Esse é meu primeiro script")
+      console.log("E estou testando o javascript")
+      console.log("Todos as minhas aprendizagens de JavaScript foram graças ao Curso em Vídeo")
+      
+      // Abre um link
+      function abreLink() {
+          window.location = "https://www.youtube.com/watch?v=Ptbk2af68e8&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=4" // URL
+      }
+    </script>
+  </body>
+</html>
