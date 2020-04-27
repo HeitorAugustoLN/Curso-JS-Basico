@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: white;
+            font: normal 16pt Caviar Dreams;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com <strong>DOM</strong></h1>
+    <p>Os vídeos do <strong>Curso em vídeo</strong> são muito bons</p>
+    <div id = 'risada'><p>O curso em vídeo é o melhor canal de cursos</p></div>
+    <div id='heitor'>OLÁ</div>
+    <script>
+        // Cria 3 variaveis para conseguir acessar o DOM de cada coisa
+        var corpo = document.body
+        var paragrafo = document.getElementsByTagName("p")[0]
+        var titulo = document.getElementsByTagName("h1")[0]
+        /* 
+        Mudará o estilo do corpo
+        dos paragráfos e dos titulos
+        */
+        corpo.style.backgroundColor = 'white'
+        paragrafo.style.color = 'black'
+        titulo.style.color = 'black'
+        var divheitor = document.getElementById('heitor') // Conseguirá o elemento pelo ID
+        divheitor.innerText = 'Isso foi alterado'
+        divheitor.style.color = 'white'
+        divheitor.style.backgroundColor = 'red'
+        var lindo = document.querySelector('div#risada') // Conseguirá o elemento com o Seletor
+        lindo.style.backgroundColor = 'red'
+    </script>
+</body>
+</html>
