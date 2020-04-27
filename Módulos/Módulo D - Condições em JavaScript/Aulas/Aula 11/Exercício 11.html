@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu país</title>
+    <style>
+        body {
+            background-color: rgb(40, 40, 40);
+            color: whitesmoke;
+            font: normal 16pt Quicksand;
+        }
+        input {
+            background-color: rgb(30, 30, 30);
+            border: none;
+            color: whitesmoke;
+            width: 150pt;
+            font: 16pt Quicksand;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificar seu país</h1>
+    Escreva o seu país aqui: <input type="text" name="verificarpaís" id="verification">
+    <input type="button" value="Verificar" id="verificarbotao" onclick="verify()">
+    <div id="res"></div>
+    <div id="result">
+
+    </div>
+    <script>
+        function verify() {
+            var $país = document.getElementById("verification") // Busca o elemento pelo id "verification"
+            var div = document.getElementById("result") // Busca o elemento pelo id "result"
+            var $div = document.getElementById("res") // Busca o elemento pelo id "res"
+            var país = ($país.value) // pega o valor de $país
+
+            if (país != "Brasil") { // Se país não for igual a Brasil
+                $div.innerHTML = `Você está em ${país}` // Mostra o seu país
+                div.innerHTML = "Resultado: Você é estrangeiro!" // Você é estrangeiro
+            } else {
+                $div.innerHTML = `Você está em ${país}` // Mostra o seu país
+                div.innerHTML = "Resultado: Você é brasileiro!" // Você é brasileiro
+            }
+        }
+    </script>
+</body>
+</html>
