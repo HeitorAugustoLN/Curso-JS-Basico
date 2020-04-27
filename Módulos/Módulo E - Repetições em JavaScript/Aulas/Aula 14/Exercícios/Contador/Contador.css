@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    font: normal 16pt Quicksand;
+    text-align: center;
+}
+
+section {
+    background-color: whitesmoke;
+    font: normal 16pt Quicksand;
+    color: rgb(30, 30, 30);
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 750px;
+    margin-right: 750px;
+}
+
+footer {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    font: italic 16pt Quicksand;
+    text-align: center;
+}
+
+input {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    border: none;
+    font: bold 12pt Quicksand;
+}
