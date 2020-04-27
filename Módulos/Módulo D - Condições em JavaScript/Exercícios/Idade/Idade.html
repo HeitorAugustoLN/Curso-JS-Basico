@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar de Idade</title>
+    <link rel="stylesheet" href="Idade.css">
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div id="anodenascimento">
+            Ano de nascimento: <input type="text" name="ano" id="ano">
+        </div>
+        <div id="sexo">
+            Sexo:
+            <input type="checkbox" name="sexo" id="sexom"> Masculino <input type="checkbox" name="sexof" id="sexof">
+            Feminino
+        </div>
+        <div id="verificar">
+            <input type="button" value="Verificar" id="verificarbotao" onclick="verificar()">
+        </div>
+        <div id="imagemdiv">
+            <img src="" alt="" id="imagem">
+        </div>
+        <div id="resultado">
+            Aperte verificar para receber o resultado
+        </div>
+    </section>
+    <footer>
+        <p>© 2020 Heitor</p>
+    </footer>
+    <script src="Idade.js"></script>
+</body>
+
+</html>
