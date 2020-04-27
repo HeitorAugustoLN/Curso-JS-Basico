@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Dados com HTML</title>
+    <style>
+        body {
+        background-color: rgb(40, 40, 40);
+        color: white;
+        font: bold 16pt Quicksand;
+      }
+    </style>
+</head>
+<body>
+    <h1>Informações sobre você:</h1>
+
+    <script>
+        var nome = prompt("Qual é seu nome?") // Irá perguntar seu nome
+        var idade = prompt("Qual é sua idade?") // Irá perguntar sua idade
+        var trabalho = prompt("Você faz o que da vida?") // Irá perguntar com o que você trabalha ou faz
+
+        document.write(`<p>Seu nome é: <strong>${nome}</strong>, seu nome tem ${nome.length} letras</p>`) // Vai escrever em "document" o seu nome e quantas letras tem seu nome
+        document.write(`<p>Sua idade é: <strong>${idade}</strong> anos</p>`) // Vai escrever em "document" a sua idade
+        document.write(`<p>Você é: <strong>${trabalho}</strong></p>`) // Vai escrever em "document" o que você faz
+    </script>
+</body>
+</html>
